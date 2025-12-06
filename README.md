@@ -20,7 +20,7 @@ The solution implements two **independent** web applications on AWS:
 ### 2. Compute (`modules/compute`)
 *   **Dynamic AMI:** Automatically fetches the latest Ubuntu 22.04 LTS image.
 *   **Frontend Server:** `t3.micro` instance running Dockerized Uptime Kuma.
-*   **Backend Server:** `t3.micro` instance running Laravel with Nginx/PHP 8.2.
+*   **Backend Server:** `t3.micro` instance running Laravel with PHP 8.2.
 
 ### 3. Database (`modules/database`)
 *   **RDS MySQL 8:** Deployed in a purely **Private Subnet** (No Internet Access).
@@ -80,4 +80,5 @@ The solution implements two **independent** web applications on AWS:
 1.  **Independent Projects:** Frontend and Backend are decoupled; each has its own direct access for testing/demo purposes.
 2.  **Cost Efficiency:** Removed NAT Gateway ($30/mo) and used Public IPs with restricted SGs instead.
 3.  **Security:** `.terraform` and `.tfstate` files are ignored in Git to protect sensitive infrastructure data.
+
 
