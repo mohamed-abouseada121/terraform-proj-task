@@ -76,9 +76,5 @@ The solution implements two **independent** web applications on AWS:
 
 ---
 
-## 💡 Key Design Decisions
-1.  **Independent Projects:** Frontend and Backend are decoupled; each has its own direct access for testing/demo purposes.
-2.  **Cost Efficiency:** Removed NAT Gateway ($30/mo) and used Public IPs with restricted SGs instead.
-3.  **Security:** `.terraform` and `.tfstate` files are ignored in Git to protect sensitive infrastructure data.
 
 
