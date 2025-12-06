@@ -122,4 +122,10 @@ We will use a **"Rehost" (Lift & Shift)** strategy. This is the fastest way to m
     ```
 2.  **Access:**
     *   **Frontend:** `http://<FRONTEND_IP>:3001`
-    *   **Backend:** `http://<BACKEND_IP>:8080`
+     *   **Backend:** `http://<BACKEND_IP>:8080`
+
+3. **Frontend Repo With Configuerd Github Actions"**
+    * https://github.com/mohamed-abouseada121/uptime-kuma/tree/main *
+
+4. **Backend Repo With Configuerd Github Actions"**
+   * https://github.com/mohamed-abouseada121/laravel/tree/main *
